@@ -222,9 +222,9 @@ dcl_ds:  (DS_DataStructureStart identifier keyword*
 				   (star_comments | directive | dcl_ds_field)*
 				)?
 			end_dcl_ds 
-		)
+		    )
 		 | keyword_likerec
-		 | keyword_likeds)
+		 | ( keyword_likeds keyword_inz? ) )
 		FREE_SEMI
 	) |
 	(
